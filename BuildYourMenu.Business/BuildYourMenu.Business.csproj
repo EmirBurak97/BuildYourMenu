@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ninject" Version="3.3.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BuildYourMenu.DataAccess\BuildYourMenu.DataAccess.csproj" />
+    <ProjectReference Include="..\BuildYourMenu.Entities\BuildYourMenu.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
