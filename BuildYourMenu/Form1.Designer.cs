@@ -301,6 +301,7 @@
             Controls.Add(gbxCategorySearch);
             Name = "Form1";
             Text = "BuildYourMenu";
+            FormClosing += Form1_FormClosing;
             Load += Form1_Load;
             gbxCategorySearch.ResumeLayout(false);
             gbxCategorySearch.PerformLayout();
