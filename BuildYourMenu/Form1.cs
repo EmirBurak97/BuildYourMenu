@@ -24,7 +24,7 @@ namespace BuildYourMenu
         }
 
         private void LoadProducts()
-        {          
+        {
             dgwProducts.DataSource = _productService.GetProductDetails();
             dgwProducts.Columns[0].HeaderText = "ID";
             dgwProducts.Columns[1].HeaderText = "Ürün Adý";
@@ -122,7 +122,7 @@ namespace BuildYourMenu
 
         private void btnDeleteProduct_Click(object sender, EventArgs e)
         {
-            if (dgwProducts.CurrentRow!=null)
+            if (dgwProducts.CurrentRow != null)
             {
                 _productService.Delete(new Product
                 {
@@ -131,6 +131,11 @@ namespace BuildYourMenu
                 MessageBox.Show("Ürün Silindi.");
                 LoadProducts();
             }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
